@@ -1,5 +1,5 @@
 // dado um valor a ser sacado, o programa calcula a quantidade minima de notas necessaria
-// para efetuar o saque
+// para efetuar o saque... requer uso de casting apenas, não sendo necessário condicionais ou loopings
 
 import java.util.Scanner;
 
@@ -45,7 +45,7 @@ public class URI1021{
         centavos *= 100;
 
         System.out.println("MOEDAS:");
-        moedas1 = resto / 1;
+        moedas1 = resto / 1; // ultima utilização de resto para valores inteiros
         System.out.println(moedas1 + " moeda(s) de R$ 1.00");
 
         moedas50 = (int) centavos / 50;
